@@ -1,6 +1,6 @@
 # PlatformSpecificValue
 
-This library might come in handy when you have a lot of compile-time platform check in your code.
+This library might come in handy when you have a lot of compile-time platform checks in your code.
 
 ```swift
 import SwiftUI
