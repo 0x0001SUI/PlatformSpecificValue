@@ -50,3 +50,9 @@ public func platformSpecific<Value>(_ platformValues: Set<PlatformSpecificValue<
         fatalError("No value was provided.")
     }
 }
+
+
+/// Returns a platform specific value.
+public func platformSpecific<Value>(_ platformValues: PlatformSpecificValue<Value>..., `default` defaultValue: Value? = nil) -> Value {
+    platformSpecific(Set(platformValues), default: defaultValue)
+}
